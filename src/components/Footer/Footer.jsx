@@ -32,7 +32,7 @@ const Footer = () => {
                                 <label className="label">
                                     <span className="label-text">Enter your email address</span>
                                 </label>
-                                <div className="relative lg:w-[300px] w-[200px]">
+                                <div className="relative w-full">
                                     <input type="text" placeholder="username@gmail.com" className="input input-bordered w-full pr-16" />
                                     <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
                                 </div>
