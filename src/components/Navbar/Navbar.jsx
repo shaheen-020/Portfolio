@@ -6,6 +6,8 @@ const Navbar = () => {
         <li className='font-semibold text-orange-400'><Link to="/">Home</Link></li>
         <li className='font-semibold'><Link to="/about">About</Link></li>
         <li className='font-semibold'><Link to="/service">Service</Link></li>
+        <li className='font-semibold'><Link to="/contact">Contact</Link></li>
+        <li className='font-semibold'><Link to="/reg">Register</Link></li>
     </>
     return (
         <div className=' bg-base-900'>
@@ -35,8 +37,7 @@ const Navbar = () => {
                         </div>
                         {/*  <a className="btn btn-ghost text-xl">daisyUI</a> */}
                         <a className="btn  btn-ghost text-xl flex items-center gap-1">
-                            <span className="w-16 h-16 bg-purple-700 text-white flex items-center justify-center rounded-full">Shaheen</span>
-                            
+                            <span className="w-16 h-16 bg-purple-700 text-white flex items-center justify-center rounded-full text-sm">Shaheen</span>              
                         </a>
 
                     </div>
@@ -45,8 +46,10 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <div className="navbar-end ml-10">
-                        <a className="btn">Button</a>
+                     <div className="navbar-end ml-10">
+                        <Link to="/login" className="font-semibold text-md bg-blue-600 px-4 py-2 rounded-xl text-white">
+                            Login
+                        </Link>
                     </div>
                 </div>
             </div>
