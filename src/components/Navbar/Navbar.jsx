@@ -35,7 +35,7 @@ const Navbar = () => {
                                 {navLinks}
                             </ul>
                         </div>
-                        <a href="/" class="btn btn-outline text-base font-bold border-2 border-blue-500 text-white">
+                        <a href="/" class="btn btn-primary text-base font-bold border-2 border-blue-500">
                             Portfolio
                         </a>
 
