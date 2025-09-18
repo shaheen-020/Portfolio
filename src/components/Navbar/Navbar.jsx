@@ -35,10 +35,10 @@ const Navbar = () => {
                                 {navLinks}
                             </ul>
                         </div>
-                        {/*  <a className="btn btn-ghost text-xl">daisyUI</a> */}
-                        <a className="btn  btn-ghost text-xl flex items-center gap-1">
-                            <span className="w-16 h-16 bg-purple-700 text-white flex items-center justify-center rounded-full text-sm">Shaheen</span>              
+                        <a href="/" class="btn btn-outline text-base font-bold border-2 border-blue-500 text-white">
+                            Portfolio
                         </a>
+
 
                     </div>
                     <div className="navbar-center hidden lg:flex">
@@ -46,8 +46,8 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                     <div className="navbar-end ml-10">
-                        <Link to="/login" className="font-semibold text-md bg-blue-600 px-4 py-2 rounded-xl text-white">
+                    <div className="navbar-end ml-10">
+                        <Link to="/login" className="font-semibold text-md bg-blue-600 px-6 py-2 rounded-xl text-white">
                             Login
                         </Link>
                     </div>

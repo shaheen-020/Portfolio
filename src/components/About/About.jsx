@@ -14,42 +14,48 @@ const About = () => {
 
     return (
         <div>
-            <div className='bg-gray-300 py-20'>
-                <div className="hero min-h-screen w-2/3 mx-auto">
-                    <div className="hero-content flex-col lg:flex-row gap-4">
-                        <img src={photo} className="lg:max-w-xl mx-w-xs rounded-xl lg:pt-0 pt-16" />
-                        <div className='text-black'>
-                            <h1 className="lg:text-5xl text-2xl font-bold">I am Professional User Experience Designer And Developer!</h1>
-                            <p className="py-4">
-                                I design and develop services for customers specializing creating stylish, modern websites,
-                                web services and online stores.
-                                My passion is to design digital user experiences.
-                            </p>
-                            <p className="py-4">I design and develop services for customers specializing creating stylish, modern websites, web services.</p>
-                            <button className="btn btn-primary" onClick={handleInProject}>
-                                {showProjects ? "HIDE MY PROJECTS" : "MY PROJECTS"}
-                            </button>
-                            {showProjects && (
-                                <div className='bg-white hover:bg-black text-black hover:text-white duration-500 rounded-xl mt-10'>
-                                    <div className='p-6'>
-                                        <h1 className='font-bold  mb-3'>It's not possible to show all projects, but also some specific given the below: </h1>
-                                        <h1><strong>URL: </strong><a href='https://makebyme-334f6.web.app/'>https://makebyme-334f6.web.app/</a></h1>
-                                        <h1><strong>URL: </strong><a href='https://category-d388c.web.app/'>https://category-d388c.web.app/</a></h1>
-                                        <h1><strong>URL: </strong><a href='https://job-replacement-b25d7.web.app/'>https://job-replacement-b25d7.web.app/</a></h1>
+            <div className='bg-base-200'>
+                <div className="hero min-h-screen">
+                    <div className="hero-content flex-col lg:flex-row-reverse w-10/12 max-auto lg:py-10 py-28">
+                        <div className="max-w-sm  lg:text-left text-center" >
+                            <img
+                                className='rounded-xl lg:mt-0 mt-10'
+                                src={photo} />
+                        </div>
+                        <div>
+                            <div className='lg:w-[500px] w-[270px]'>
+                                <h1 className="lg:text-5xl text-2xl font-bold">I am Professional User Experience Designer And Web Developer!</h1>
+                                <p className="py-4">
+                                    I develop services for customers specializing creating stylish, modern websites,
+                                    web services and online stores.
+                                    My passion is to design digital user experiences.
+                                </p>
+                                <p className="py-4">I develop services for customers specializing creating stylish, modern websites, web services.</p>
+                                <button className="btn btn-primary" onClick={handleInProject}>
+                                    {showProjects ? "HIDE MY PROJECTS" : "MY PROJECTS"}
+                                </button>
+                                {showProjects && (
+                                    <div className="bg-white hover:bg-black text-black hover:text-white duration-500 rounded-xl mt-10">
+                                        <div className="p-6">
+                                            <h1 className="font-bold mb-3">It's not possible to show all projects, but also some specific given the below:</h1>
+                                            <h1><strong>URL: </strong><a href="https://makebyme-334f6.web.app/">https://makebyme-334f6.web.app/</a></h1>
+                                            <h1><strong>URL: </strong><a href="https://category-d388c.web.app/">https://category-d388c.web.app/</a></h1>
+                                            <h1><strong>URL: </strong><a href="https://job-replacement-b25d7.web.app/">https://job-replacement-b25d7.web.app/</a></h1>
+                                        </div>
                                     </div>
-                                </div>
-                            )}
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='bg-slate-500 py-10'>
+            <div className='bg-slate-900 py-10'>
                 <div className='w-10/12 mx-auto'>
                     <div className='text-center max-w-sm mx-auto  space-y-3'>
                         <h className="lg:text-5xl text-3xl font-bold text-white">My Blog</h>
                         <p className='text-white'>Check out my recent blog posts where I share insights on design, development, and the latest industry trends.</p>
                     </div>
-                    <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 py-6'>
+                    <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 py-6 px-4'>
                         <div className="card lg:w-96 w-72 bg-base-100 shadow-xl">
                             <figure className="px-10 pt-10">
                                 <img src={photo1} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
@@ -118,3 +124,38 @@ const About = () => {
 };
 
 export default About;
+{/* <div className='bg-base-200 py-20'>
+                <div className="hero min-h-screen w-4/5 mx-auto">
+                    <div className="hero-content flex-col lg:flex-row gap-4 pr-5">
+                        <div className="max-w-sm  lg:text-right text-center">
+                            <img
+                                className="rounded-xl lg:mt-0 mt-16"
+                                src={photo}
+                                alt="Professional User Experience Designer"
+                            />
+                        </div>
+                        <div className='w-[300px]'>
+                            <h1 className="lg:text-5xl text-2xl font-bold">I am Professional User Experience Designer And Developer!</h1>
+                            <p className="py-4">
+                                I design and develop services for customers specializing creating stylish, modern websites,
+                                web services and online stores.
+                                My passion is to design digital user experiences.
+                            </p>
+                            <p className="py-4">I design and develop services for customers specializing creating stylish, modern websites, web services.</p>
+                            <button className="btn btn-primary" onClick={handleInProject}>
+                                {showProjects ? "HIDE MY PROJECTS" : "MY PROJECTS"}
+                            </button>
+                            {showProjects && (
+                                <div className="bg-white hover:bg-black text-black hover:text-white duration-500 rounded-xl mt-10">
+                                    <div className="p-6">
+                                        <h1 className="font-bold mb-3">It's not possible to show all projects, but also some specific given the below:</h1>
+                                        <h1><strong>URL: </strong><a href="https://makebyme-334f6.web.app/">https://makebyme-334f6.web.app/</a></h1>
+                                        <h1><strong>URL: </strong><a href="https://category-d388c.web.app/">https://category-d388c.web.app/</a></h1>
+                                        <h1><strong>URL: </strong><a href="https://job-replacement-b25d7.web.app/">https://job-replacement-b25d7.web.app/</a></h1>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </div> */}

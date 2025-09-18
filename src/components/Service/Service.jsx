@@ -126,7 +126,7 @@ const Service = () => {
                             <div className='w-16 h-16 flex items-center justify-center rounded-lg'>
                                 <img src={s1} className="rounded-full " alt="" />
                             </div>
-                            <div className='text-start space-y-3'>
+                            <div className='text-start space-y-3 pt-4'>
                                 <h1 className='text-2xl font-bold'>Facebook</h1>
                                 <p>Built high-performance, user-centric features inspired by Facebook's
                                     scalable design principles to deliver seamless user experiences.
@@ -139,8 +139,8 @@ const Service = () => {
                             <div className='w-20 h-25 flex items-center justify-center rounded-lg'>
                                 <img src={s2} className="rounded-full " alt="" />
                             </div>
-                            <div className='text-start space-y-3'>
-                                <h1 className='text-2xl font-bold'>~Amazon</h1>
+                            <div className='text-start space-y-3 pt-4'>
+                                <h1 className='text-2xl font-bold mt-8'>~Amazon</h1>
                                 <p>
                                     Engineered scalable, user-driven components influenced by Amazon’s data-backed eCommerce efficiency and UX.
                                 </p>
@@ -152,7 +152,7 @@ const Service = () => {
                             <div className='w-16 h-16 flex items-center justify-center rounded-lg'>
                                 <img src={s4} className="rounded-full " alt="" />
                             </div>
-                            <div className='text-start space-y-3'>
+                            <div className='text-start space-y-3 pt-8'>
                                 <h1 className='text-2xl font-bold'>Instagram</h1>
                                 <p>
                                     Designed visually engaging, mobile-first interfaces inspired by Instagram’s sleek and intuitive user experience.
@@ -165,7 +165,7 @@ const Service = () => {
                             <div className='w-16 h-16 flex items-center justify-center rounded-lg'>
                                 <img src={s5} className="rounded-full " alt="" />
                             </div>
-                            <div className='text-start space-y-3'>
+                            <div className='text-start space-y-3 pt-6'>
                                 <h1 className='text-2xl font-bold'>LinkedIn</h1>
                                 <p>Built professional, conversion-focused features modeled after LinkedIn’s networking and engagement strategies.</p>
                                 <button className='btn btn-primary rounded-xl p-5'><a href=''>Add Me</a></button>
@@ -176,7 +176,7 @@ const Service = () => {
                             <div className='w-20 h-25 flex items-center justify-center rounded-lg'>
                                 <img src={s3} className="rounded-full " alt="" />
                             </div>
-                            <div className='text-start space-y-3'>
+                            <div className='text-start space-y-3 pt-8'>
                                 <h1 className='text-2xl font-bold'>Google</h1>
                                 <p>
                                     Developed fast, accessible, and SEO-optimized solutions inspired by Google’s performance and usability standards.
