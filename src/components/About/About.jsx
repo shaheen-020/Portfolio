@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaJs, FaJava, FaPython, FaReact } from "react-icons/fa";
+import { SiCplusplus, SiMysql } from "react-icons/si";
 import photo from "../../assets/cv_photo.jpg";
 import photo1 from "../../assets/images/photo1.jpg";
 import photo2 from "../../assets/images/photo2.jpg";
@@ -12,6 +14,56 @@ const About = () => {
         setShowProjects(!showProjects);
     }
 
+    const skills = [
+        {
+            name: "JavaScript",
+            icon: <FaJs className="text-yellow-400" />,
+            level: "Advanced",
+            experience: "Almost 4 years",
+            role: "Frontend Developer",
+            salary: "15,000"
+        },
+        {
+            name: "Java",
+            icon: <FaJava className="text-red-600" />,
+            level: "Intermediate",
+            experience: "Almost 2 years",
+            role: "Android Developer",
+            salary: "12,000"
+        },
+        {
+            name: "Python",
+            icon: <FaPython className="text-blue-500" />,
+            level: "Intermediate",
+            experience: "Almost 2 years",
+            role: "Data/Backend Developer",
+            salary: "12,000"
+        },
+        {
+            name: "React",
+            icon: <FaReact className="text-cyan-400" />,
+            level: "Advanced",
+            experience: "Almost 3 years",
+            role: "Front-end Developer",
+            salary: "10,000"
+        },
+        {
+            name: "C++",
+            icon: <SiCplusplus className="text-blue-700" />,
+            level: "Intermediate",
+            experience: "4 years",
+            role: "Software Developer",
+            salary: "8,500"
+        },
+        {
+            name: "SQL",
+            icon: <SiMysql className="text-blue-600" />,
+            level: "Intermediate",
+            experience: "1 years",
+            role: "Database Developer",
+            salary: "9,500"
+        },
+    ];
     return (
         <div>
             <div className='bg-base-200'>
@@ -121,43 +173,35 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <div className='bg-slate-800 py-20'>
+                <div className="w-10/12 mx-auto rounded-xl" id="skill">
+                    <div className='lg:w-[500px] w-[300px] mx-auto text-center'>
+                        <h2 className="text-3xl font-bold text-center mb-4 text-white">
+                            Experience
+                        </h2>
+                        <p className='mb-10 text-white px-3'>Experience with JavaScript, Java, Python, and React encompasses a
+                            wide range of programming paradigms and application development areas.
+                        </p>
+                    </div>
+                    <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 px-4'>
+                        {skills.map((skill, index) => (
+                            <div
+                                key={index}
+                                className="lg:w-96 w-72 flex flex-col items-center bg-white text-slate-900 shadow-md rounded-2xl p-6 hover:shadow-lg transition"
+                            >
+                                <div className='lg:text-7xl text-2xl mb-4'>{skill.icon}</div>
+                                <div className='lg:text-3xl text-2xl mb-4 font-bold'>{skill.name}</div>
+                                <div className='text-xl mb-4 font-semibold'>{skill.level}</div>
+                                <div className='text-xl mb-4 font-semibold'>{skill.experience}</div>
+                                <div className='text-xl mb-4 font-semibold'>{skill.role}</div>
+                                <div className='text-xl mb-4 font-semibold'>Salary: {skill.salary}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
 
 export default About;
-{/* <div className='bg-base-200 py-20'>
-                <div className="hero min-h-screen w-4/5 mx-auto">
-                    <div className="hero-content flex-col lg:flex-row gap-4 pr-5">
-                        <div className="max-w-sm  lg:text-right text-center">
-                            <img
-                                className="rounded-xl lg:mt-0 mt-16"
-                                src={photo}
-                                alt="Professional User Experience Designer"
-                            />
-                        </div>
-                        <div className='w-[300px]'>
-                            <h1 className="lg:text-5xl text-2xl font-bold">I am Professional User Experience Designer And Developer!</h1>
-                            <p className="py-4">
-                                I design and develop services for customers specializing creating stylish, modern websites,
-                                web services and online stores.
-                                My passion is to design digital user experiences.
-                            </p>
-                            <p className="py-4">I design and develop services for customers specializing creating stylish, modern websites, web services.</p>
-                            <button className="btn btn-primary" onClick={handleInProject}>
-                                {showProjects ? "HIDE MY PROJECTS" : "MY PROJECTS"}
-                            </button>
-                            {showProjects && (
-                                <div className="bg-white hover:bg-black text-black hover:text-white duration-500 rounded-xl mt-10">
-                                    <div className="p-6">
-                                        <h1 className="font-bold mb-3">It's not possible to show all projects, but also some specific given the below:</h1>
-                                        <h1><strong>URL: </strong><a href="https://makebyme-334f6.web.app/">https://makebyme-334f6.web.app/</a></h1>
-                                        <h1><strong>URL: </strong><a href="https://category-d388c.web.app/">https://category-d388c.web.app/</a></h1>
-                                        <h1><strong>URL: </strong><a href="https://job-replacement-b25d7.web.app/">https://job-replacement-b25d7.web.app/</a></h1>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            </div> */}

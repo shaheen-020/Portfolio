@@ -16,7 +16,7 @@ const Contact = () => {
         setSubmitError(' ');
         setSuccessSubmit(' ');
         if (password.length < 6) {
-            setSubmitError("Password must be greater than 6 length.");
+            setSubmitError("Password must be greater than or equal 6 length.");
             return;
         }
         createUserWithEmailAndPassword(auth, email, password)
@@ -71,7 +71,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <form className="w-full max-w-2xl bg-white p-8 rounded-lg shadow-md space-y-6" onSubmit={handleSubmit}>
-                            <h2 className="text-2xl font-semibold text-slate-800">Contact Us</h2>
+                            <h2 className="text-2xl font-bold text-slate-800">Contact Me</h2>
                             <div>
                                 <label className="block text-sm font-medium text-slate-800 mb-1">Name</label>
                                 <input
@@ -129,9 +129,9 @@ const Contact = () => {
                                     Submit
                                 </button>
                             </div>
+                            {submitError && <p className="text-red-600 text-2xl text-center font-bold">{submitError}</p>}
+                            {successSubmit && <p className="text-green-600 text-2xl text-center font-bold">{successSubmit}</p>}
                         </form>
-                        {submitError && <p className="text-red-600 text-xl text-center py-5 font-bold">{submitError}</p>}
-                        {successSubmit && <p className="text-green-600 text-xl text-center py-5 font-bold">{successSubmit}</p>}
                     </div>
                 </div>
             </div>
