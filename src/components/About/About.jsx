@@ -52,8 +52,10 @@ const About = () => {
             <div className='bg-slate-900 py-10'>
                 <div className='w-10/12 mx-auto'>
                     <div className='text-center max-w-sm mx-auto  space-y-3'>
-                        <h className="lg:text-5xl text-3xl font-bold text-white">My Blog</h>
-                        <p className='text-white'>Check out my recent blog posts where I share insights on design, development, and the latest industry trends.</p>
+                        <h className="lg:text-5xl text-3xl font-bold text-white">My Research</h>
+                        <p className='text-white'>
+                            Explore my recent research work where I share findings, insights, and perspectives on emerging trends and developments in the field.
+                        </p>
                     </div>
                     <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 py-6 px-4'>
                         <div className="card lg:w-96 w-72 bg-base-100 shadow-xl">
