@@ -189,7 +189,7 @@ const About = () => {
                                 key={index}
                                 className="lg:w-96 w-72 flex flex-col items-center bg-white text-slate-900 shadow-md rounded-2xl p-6 hover:shadow-lg transition"
                             >
-                                <div className='lg:text-7xl text-2xl mb-4'>{skill.icon}</div>
+                                <div className='lg:text-7xl text-5xl mb-4'>{skill.icon}</div>
                                 <div className='lg:text-3xl text-2xl mb-4 font-bold'>{skill.name}</div>
                                 <div className='text-xl mb-4 font-semibold'>{skill.level}</div>
                                 <div className='text-xl mb-4 font-semibold'>{skill.experience}</div>
