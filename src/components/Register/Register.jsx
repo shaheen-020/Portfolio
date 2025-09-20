@@ -31,7 +31,7 @@ const Register = () => {
             <div className="hero bg-base-200 min-h-screen py-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left p-6">
-                        <h1 className="lg:text-5xl text-3xl font-bold mb-5 pt-20 lg:pt-0">Register now!</h1>
+                        <h1 className="lg:text-5xl text-3xl font-bold mb-5 pt-20 lg:pt-0">Register now</h1>
                         <p className="mb-3">
                             The register page allows new users to create an account by providing details such as name, email,
                             and password. It ensures user data is securely stored and may
@@ -39,7 +39,7 @@ const Register = () => {
                         </p>
                     </div>
                     <div className="card bg-base-100 w-full lg:max-w-sm max-w-xs shrink-0 shadow-2xl">
-                        <form className="card-body text-center" onSubmit={handleInRegister}>
+                        <form className="card-body" onSubmit={handleInRegister}>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text font-bold">Email: </span>

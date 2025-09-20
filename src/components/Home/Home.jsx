@@ -73,9 +73,9 @@ const Home = () => {
                 </div>
             </div>
             <div className='w-10/12 mx-auto py-10 bg-base-100 mb-8 rounded-lg'>
-                <div className='text-center max-w-sm mx-auto space-y-3 mb-5 px-4'>
-                    <h1 className="lg:text-5xl text-3xl  font-bold">Portfolio</h1>
-                    <p className='mb-3'>Here's a selection of my recent work, showcasing my skills in creating user-centric and visually appealing interfaces.</p>
+                <div className='text-center lg:w-[500px] w-[300px] mx-auto space-y-3 px-4 mb-12'>
+                    <h1 className="lg:text-5xl text-2xl  font-bold mb-5">Web Development</h1>
+                    <p className=''>Here's a selection of my recent work, showcasing my skills in creating user-centric and visually appealing interfaces.</p>
                 </div>
                 <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 px-3'>
                     <div className="card lg:w-96 w-72 bg-base-200 shadow-xl">
@@ -83,7 +83,7 @@ const Home = () => {
                             <img src={lap1} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                         </figure>
                         <div className="card-body items-center text-center space-y-2">
-                            <h3>UI-UX DESIGN</h3>
+                            <h3>WEB DESIGN</h3>
                             <h2 className="card-title">Product Admin Dashboard</h2>
                             <p>I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.</p>
                             <div className="card-actions">
@@ -98,7 +98,7 @@ const Home = () => {
                             <img src={lap2} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                         </figure>
                         <div className="card-body items-center text-center space-y-2">
-                            <h3>UI-UX DESIGN</h3>
+                            <h3>WEB DESIGN</h3>
                             <h2 className="card-title">Product Admin Dashboard</h2>
                             <p>I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.</p>
                             <div className="card-actions">
@@ -113,7 +113,7 @@ const Home = () => {
                             <img src={lap3} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                         </figure>
                         <div className="card-body items-center text-center space-y-2">
-                            <h3>UI-UX DESIGN</h3>
+                            <h3>WEB DESIGN</h3>
                             <h2 className="card-title">Product Admin Dashboard</h2>
                             <p>I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.</p>
                             <div className="card-actions">
@@ -125,8 +125,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='mb-10'>
-                <div className='w-10/12 mx-auto py-20 bg-slate-900 rounded-xl px-5'>
+            <div className='bg-slate-800'>
+                <div className='w-10/12 mx-auto py-20  rounded-xl px-5'>
                     <h1 className="lg:text-5xl text-3xl font-bold text-center px-4 text-white">Do you know how to start ?</h1>
                     <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 items-center mt-8'>
                         <div className='px-10 space-y-2'>
@@ -138,6 +138,7 @@ const Home = () => {
                             <div>
                                 <button className='btn btn-primary mt-10 rounded-lg hover:bg-sky-900 bg-purple-900 duration-500 uppercase outline-none' onClick={handleInProject}>
                                     {showProjects ? " Hide  More Projects" : " More Projects"}
+                                    <FaArrowRight className='m-1'></FaArrowRight>
                                 </button>
                                 {showProjects && (
                                     <div className='bg-white hover:bg-black text-black hover:text-white duration-500 rounded-xl mt-10'>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaArrowRight } from "react-icons/fa";
 import s1 from "../../assets/images/facebook.png";
 import s2 from "../../assets/images/amazon.png";
 import s3 from "../../assets/images/google.png";
@@ -44,7 +45,8 @@ const Service = () => {
                             </p>
                             <div className='py-5'>
                                 <button class="btn btn-secondary hover:bg-sky-900 border-none" onClick={handleSay}>
-                                    {showSay ? "Hide GitHub!" : " Explore GitHub!"}
+                                    {showSay ? "Hide GitHub" : " Explore GitHub"}
+                                    <FaArrowRight className='mt-1'></FaArrowRight>
                                 </button>
                                 {showSay && (
                                     <div className='mt-6 bg-purple-200 p-4 rounded-lg shadow-md text-black'>
@@ -97,7 +99,7 @@ const Service = () => {
                         <div className="text-center mb-12">
                             <h1 className="text-4xl font-bold text-white mb-4">Our Services</h1>
                             <p className="text-white mt-2">What you offer to help your business grow.</p>
-                        </div> 
+                        </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                             {services.map((service, index) => (
                                 <div key={index} className="card bg-base-100 shadow-xl hover:shadow-2xl transition">
@@ -112,7 +114,10 @@ const Service = () => {
 
                         <div className="text-center mt-16">
                             <h3 className="text-2xl font-semibold mb-6 text-white">Ready to work with us?</h3>
-                            <button className="btn btn-primary"><a href='/contact'>Contact Us</a></button>
+                            <button className="btn btn-primary">
+                                <a href='/contact'>Contact Me</a>
+                                <FaArrowRight className='mt-1'></FaArrowRight>
+                            </button>
                         </div>
                     </div>
                 </div>

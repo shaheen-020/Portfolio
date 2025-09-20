@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaJs, FaJava, FaPython, FaReact } from "react-icons/fa";
 import { SiCplusplus, SiMysql } from "react-icons/si";
+import { FaArrowRight } from 'react-icons/fa';
 import photo from "../../assets/cv_photo.jpg";
 import photo1 from "../../assets/images/photo1.jpg";
 import photo2 from "../../assets/images/photo2.jpg";
@@ -85,6 +86,7 @@ const About = () => {
                                 <p className="py-4">I develop services for customers specializing creating stylish, modern websites, web services.</p>
                                 <button className="btn btn-primary" onClick={handleInProject}>
                                     {showProjects ? "HIDE MY PROJECTS" : "MY PROJECTS"}
+                                    <FaArrowRight className='mt-1'></FaArrowRight>
                                 </button>
                                 {showProjects && (
                                     <div className="bg-white hover:bg-black text-black hover:text-white duration-500 rounded-xl mt-10">
@@ -115,8 +117,8 @@ const About = () => {
                                 <img src={photo1} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title">22 October, 2022</h2>
-                                <p>Responsive Design: Adapting to all devices.</p>
+                                <h2 className="card-title italic">22 October, 2022</h2>
+                                <p className='italic'>Responsive Design: Adapting to all devices.</p>
                             </div>
                         </div>
                         {/* card no 1 */}
@@ -125,8 +127,8 @@ const About = () => {
                                 <img src={photo2} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title">3 November, 2022</h2>
-                                <p>When you hear the word desert, what comes to mind?</p>
+                                <h2 className="card-title italic">3 November, 2022</h2>
+                                <p className='italic'>When you hear the word desert, what comes to mind?</p>
                             </div>
                         </div>
                         {/* card no 2 */}
@@ -135,8 +137,8 @@ const About = () => {
                                 <img src={photo3} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title">29 December, 2021</h2>
-                                <p>A hill is a naturally raised area of land, lower and less steep than a mountain.</p>
+                                <h2 className="card-title italic">29 December, 2021</h2>
+                                <p className='italic'>A hill is a naturally raised area of land, lower and less steep than a mountain.</p>
                             </div>
                         </div>
                         {/* card no 3 */}
@@ -145,8 +147,8 @@ const About = () => {
                                 <img src={photo4} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title">21 September, 2023</h2>
-                                <p>Unlike highways or city streets, hill roads have a rhythm of their own.</p>
+                                <h2 className="card-title italic">21 September, 2023</h2>
+                                <p className='italic'>Unlike highways or city streets, hill roads have a rhythm of their own.</p>
                             </div>
                         </div>
                         {/* card no 4 */}
@@ -155,8 +157,8 @@ const About = () => {
                                 <img src={photo5} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title">23 August, 2023</h2>
-                                <p>Popular with professionals, known for high quality and lens flexibility.</p>
+                                <h2 className="card-title italic">23 August, 2023</h2>
+                                <p className='italic'>Popular with professionals, known for high quality and lens flexibility.</p>
                             </div>
                         </div>
                         {/* card no 5 */}
@@ -165,8 +167,8 @@ const About = () => {
                                 <img src={photo6} alt="Shoes" className="rounded-xl w-[400px] h-[250px]" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title">28 January, 2024</h2>
-                                <p>There are over 8.7 million estimated species on Earth, and more than 7 million of them are animals!</p>
+                                <h2 className="card-title italic">28 January, 2024</h2>
+                                <p className='italic'>There are over 8.7 million estimated species on Earth, and more than 7 million of them are animals!</p>
                             </div>
                         </div>
                         {/* card no 6 */}
@@ -187,14 +189,14 @@ const About = () => {
                         {skills.map((skill, index) => (
                             <div
                                 key={index}
-                                className="lg:w-96 w-72 flex flex-col items-center bg-white text-slate-900 shadow-md rounded-2xl p-6 hover:shadow-lg transition"
+                                className="lg:w-96 w-72 flex flex-col items-center bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition"
                             >
                                 <div className='lg:text-7xl text-5xl mb-4'>{skill.icon}</div>
-                                <div className='lg:text-3xl text-2xl mb-4 font-bold'>{skill.name}</div>
-                                <div className='text-xl mb-4 font-semibold'>{skill.level}</div>
-                                <div className='text-xl mb-4 font-semibold'>{skill.experience}</div>
-                                <div className='text-xl mb-4 font-semibold'>{skill.role}</div>
-                                <div className='text-xl mb-4 font-semibold'>Salary: {skill.salary}</div>
+                                <div className='lg:text-3xl text-2xl mb-4 font-bold text-slate-800 italic'>{skill.name}</div>
+                                <div className='text-base mb-4 font-semibold italic text-slate-700'>Level:   {skill.level}</div>
+                                <div className='text-base mb-4 font-semibold italic text-slate-700'>Experience:   {skill.experience}</div>
+                                <div className='text-base mb-4 font-semibold italic text-slate-700'>Role:   {skill.role}</div>
+                                <div className='text-base mb-4 font-semibold italic text-slate-700'>Salary:   {skill.salary}</div>
                             </div>
                         ))}
                     </div>

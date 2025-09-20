@@ -31,14 +31,14 @@ const Login = () => {
             <div className="hero bg-base-200 min-h-screen py-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left p-6">
-                        <h1 className="lg:text-5xl text-3xl font-bold mb-5 pt-20 lg:pt-0">Login now!</h1>
+                        <h1 className="lg:text-5xl text-3xl font-bold mb-5 pt-20 lg:pt-0">Login now</h1>
                         <p className="mb-3">
                             The login page enables existing users to access their accounts by entering their credentials, typically email and password.
                             It verifies the input against stored data and grants access upon successful authentication.
                         </p>
                     </div>
                     <div className="card bg-base-100 w-full lg:max-w-sm max-w-xs shrink-0 shadow-2xl">
-                        <form className="card-body text-center" onSubmit={handleInLogin}>
+                        <form className="card-body" onSubmit={handleInLogin}>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text font-bold">Email: </span>

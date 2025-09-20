@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import photo from "../../assets/cv_photo.jpg";
 
 const Navbar = () => {
     const navLinks = <>
-        <li className='font-semibold text-orange-400'><Link to="/">Home</Link></li>
-        <li className='font-semibold'><Link to="/about">Skills</Link></li>
-        <li className='font-semibold'><Link to="/service">Service</Link></li>
-        <li className='font-semibold'><Link to="/contact">Contact</Link></li>
-        <li className='font-semibold'><Link to="/reg">Register</Link></li>
+        <li className='font-bold text-primary'><Link to="/">Home</Link></li>
+        <li className='font-bold hover:text-primary'><Link to="/about">Skills</Link></li>
+        <li className='font-bold hover:text-primary'><Link to="/service">Service</Link></li>
+        <li className='font-bold hover:text-primary'><Link to="/contact">Contact</Link></li>
+        <li className='font-bold hover:text-primary'><Link to="/reg">Register</Link></li>
     </>
     return (
         <div className=' bg-base-900'>
@@ -46,9 +47,9 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <div className="navbar-end ml-10">
-                        <Link to="/login" className="font-semibold text-md bg-blue-600 px-6 py-2 rounded-xl text-white">
-                            Login
+                    <div className="navbar-end ml-8">
+                        <Link to="/login" className="font-semibold text-md bg-blue-500 hover:bg-primary  px-6 py-2 rounded-xl text-white">
+                            LOGIN
                         </Link>
                     </div>
                 </div>
