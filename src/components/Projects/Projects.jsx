@@ -51,12 +51,12 @@ const projectData = [
   },
   {
     id: 6,
-    title: "Brand Phone Auth",
-    description: "Connect with friends, share posts, and chat in real-time with our scalable social platform.",
+    title: "Campus Connect Platform",
+    description: "A platform for students to connect, share resources, and collaborate on projects within their campus community.",
     type: "Mern Stack",
     tech: ["MongoDB", "Express", "React", "Node Js"],
-    github: "https://github.com/shaheenio20/brand-phone-auth-server",
-    live: "https://brand-phone-auth.netlify.app/"
+    github: "https://github.com/shaheenio20/CampusConnect",
+    live: "https://campusconnect-dbdd6.web.app"
   }
 ];
 
